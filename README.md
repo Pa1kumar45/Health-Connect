@@ -67,17 +67,27 @@ All within a secure and user-friendly environment.
 
 ---
 
-# BACKEND SETUP
-git clone <repository-url> && \
-cd web_tech_project/backend && \
-npm install && \
-echo "PORT=5000
-MONGODB_URI=mongodb://localhost:27017/medconnect
-JWT_SECRET=your_secure_jwt_secret
-CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_key
-CLOUDINARY_API_SECRET=your_cloudinary_secret" > .env && \
-npm start &
+# Backend Setup
+
+1. Clone the repository
+`git clone <repository-url>` 
+`cd web_tech_project/backend`
+
+2. Install Dependencies
+`npm install`
+
+3. Create a .env file with the following variables:
+ 
+`"PORT=5000`
+`MONGODB_URI=mongodb://localhost:27017/medconnect`
+`JWT_SECRET=your_secure_jwt_secret`
+`CLOUDINARY_CLOUD_NAME=your_cloudinary_name`
+`CLOUDINARY_API_KEY=your_cloudinary_key`
+`CLOUDINARY_API_SECRET=your_cloudinary_secret`
+
+4. Start the backend server
+`npm start`
+
 
 # Frontend Setup
 
